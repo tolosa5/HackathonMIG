@@ -17,13 +17,13 @@ public class PlayerInteract : MonoBehaviour
 
     public IInteractable GetInteractableObject()
     {
-        Collider[] interactableColls = Physics.OverlapSphere(
-            interactTransform.position, interactionSize, interactableMask);
+        Collider[] colls = Physics.OverlapSphere(interactTransform.position, 
+            interactionSize, interactableMask);
 
-        if (interactableColls.Length <= 0) 
+        if (colls.Length <= 0) 
             return null;
         
-        return interactableColls[0].gameObject.TryGetComponent(
+        return colls[0].gameObject.TryGetComponent(
             out IInteractable interactable) ? interactable : null;
     }
 

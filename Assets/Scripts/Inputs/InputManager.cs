@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class InputManager : MonoBehaviour
 {
@@ -9,8 +8,6 @@ public class InputManager : MonoBehaviour
 
     private void Awake()
     {
-        inputSystemActions = new InputSystem_Actions();
-        
         if (instance != null)
         {
             Destroy(gameObject);
@@ -18,8 +15,11 @@ public class InputManager : MonoBehaviour
         }
 
         instance = this;
+        
+        inputSystemActions = new InputSystem_Actions();
+        inputSystemActions.Enable();
     }
-    
+
     private void OnDestroy()
     {
         inputSystemActions.Dispose();

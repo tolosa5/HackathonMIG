@@ -734,7 +734,7 @@ Transform:
   m_GameObject: {fileID: 640497187}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0.27, z: -1.49}
+  m_LocalPosition: {x: -0.869, y: 0.27, z: -1.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1230,11 +1230,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b11effc7b0380fa4b869a81c9310fe4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerPickUp
-  maxRayDistance: 20
+  grabPoint: {fileID: 219340557}
   interactableLayer:
     serializedVersion: 2
     m_Bits: 64
-  grabPoint: {fileID: 219340557}
+  maxRayDistance: 20
 --- !u!1 &1926759341
 GameObject:
   m_ObjectHideFlags: 0
@@ -1410,7 +1410,8 @@ GameObject:
   - component: {fileID: 1984384791}
   - component: {fileID: 1984384790}
   - component: {fileID: 1984384794}
-  m_Layer: 0
+  - component: {fileID: 1984384795}
+  m_Layer: 6
   m_Name: SampleGrabbableItem
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
@@ -1504,7 +1505,7 @@ Transform:
   m_GameObject: {fileID: 1984384789}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.57, y: 0.59205, z: -2.89}
+  m_LocalPosition: {x: 0.415, y: 0.59205, z: -1.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1533,10 +1534,22 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &1984384795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984384789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4754dbb98d36956449a56c90170d77ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabbableObject
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1546,7 +1559,7 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 1706717828}
   - {fileID: 640497191}
+  - {fileID: 1984384793}
   - {fileID: 1926759345}
   - {fileID: 1606722767}
   - {fileID: 966228191}
-  - {fileID: 1984384793}
