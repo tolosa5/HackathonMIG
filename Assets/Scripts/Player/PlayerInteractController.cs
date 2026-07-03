@@ -1,12 +1,10 @@
 using System;
 using UnityEngine;
 
-public class PlayerManager : MonoBehaviour
+public class PlayerInteractController : MonoBehaviour
 {
     PlayerInteract playerInteract;
-    
-    public Action onShowTooltip;
-    public Action onHideTooltip;
+    PlayerPickUp playerPickUp;
 
     private void OnEnable()
     {
@@ -15,22 +13,14 @@ public class PlayerManager : MonoBehaviour
 
     private void EventsSubscription()
     {
-        InputManager.instance.onInteractEvent += LookForInteraction;
+        InputManager.instance.inputSystemActions.Player.Interact.performed += ctx => LookForInteraction();
+        InputManager.instance.inputSystemActions.Player.Grab.performed += ctx => playerPickUp.PickUp();
+        InputManager.instance.inputSystemActions.Player.Interact.canceled += ctx => playerPickUp.Drop();
     }
 
     private void Start()
     {
         playerInteract = GetComponent<PlayerInteract>();
-    }
-
-    private void Update()
-    {
-        //TODO: Limpiar esto
-        if (playerInteract.GetInteractableObject() != null)
-            GameManager.instance.ShowTooltip();
-        else
-            GameManager.instance.HideTooltip();
-        
     }
 
     private void LookForInteraction()
