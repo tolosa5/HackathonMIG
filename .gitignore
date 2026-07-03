@@ -107,13 +107,7 @@ InitTestScene*.unity*
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
 
 # Local packages used by Fran
-/[Aa]ssets/[Pp]lugins/Tiny Giant Studio
-/[Aa]ssets/[Pp]lugins/Tiny Giant Studio.meta
-/[Aa]ssets/Tiny Giant Studio
-/[Aa]ssets/Tiny Giant Studio.meta
-/[Aa]ssets/Wingman
-/[Aa]ssets/Wingman.meta
-/[Aa]ssets/OpalStudio
-/[Aa]ssets/OpalStudio.meta
-/[Aa]ssets/ConsolePro
-/[Aa]ssets/ConsolePro.meta
+/[Aa]ssets/KinematicCharacterController/ExampleCharacter
+/[Aa]ssets/KinematicCharacterController/ExampleCharacter.meta
+/[Aa]ssets/KinematicCharacterController/Examples
+/[Aa]ssets/KinematicCharacterController/Examples.meta
