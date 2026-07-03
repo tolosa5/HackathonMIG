@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     
-    private PlayerInteractionController playerInteractionController;
+    private PlayerInteractController _playerInteractController;
     private CanvasManager canvasManager;
 
     private void Awake()
@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
     
     private void Start()
     {
-        playerInteractionController = FindObjectOfType<PlayerInteractionController>();
+        _playerInteractController = FindObjectOfType<PlayerInteractController>();
         canvasManager = FindObjectOfType<CanvasManager>();
     }
 

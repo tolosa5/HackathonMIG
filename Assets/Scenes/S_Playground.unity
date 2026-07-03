@@ -455,6 +455,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3782de0948784e7ab398e8e538c2d18e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Game.FirstPerson::Game.FirstPerson.FirstPersonCharacter
+--- !u!4 &960866466 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6443615354672758032, guid: 3bda3fbeb4858504a823466d67b0e5dd, type: 3}
+  m_PrefabInstance: {fileID: 960866463}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1043271862
 GameObject:
   m_ObjectHideFlags: 0
@@ -628,9 +633,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 960866464}
     - target: {fileID: 5783941108297070178, guid: 6cc8a9b6c19f0dc48980b23d8faf8997, type: 3}
+      propertyPath: cameraRoot
+      value: 
+      objectReference: {fileID: 228699076}
+    - target: {fileID: 5783941108297070178, guid: 6cc8a9b6c19f0dc48980b23d8faf8997, type: 3}
+      propertyPath: cameraTarget
+      value: 
+      objectReference: {fileID: 960866466}
+    - target: {fileID: 5783941108297070178, guid: 6cc8a9b6c19f0dc48980b23d8faf8997, type: 3}
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 228699076}
+    - target: {fileID: 5783941108297070178, guid: 6cc8a9b6c19f0dc48980b23d8faf8997, type: 3}
+      propertyPath: lookInputAction
+      value: 
+      objectReference: {fileID: -5630151704836100654, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    - target: {fileID: 5783941108297070178, guid: 6cc8a9b6c19f0dc48980b23d8faf8997, type: 3}
+      propertyPath: moveInputAction
+      value: 
+      objectReference: {fileID: -1680190386980627800, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    - target: {fileID: 5783941108297070178, guid: 6cc8a9b6c19f0dc48980b23d8faf8997, type: 3}
+      propertyPath: sensitivityMultiplier.x
+      value: 0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5783941108297070178, guid: 6cc8a9b6c19f0dc48980b23d8faf8997, type: 3}
+      propertyPath: sensitivityMultiplier.y
+      value: 0.18
+      objectReference: {fileID: 0}
     - target: {fileID: 8923915714210429222, guid: 6cc8a9b6c19f0dc48980b23d8faf8997, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

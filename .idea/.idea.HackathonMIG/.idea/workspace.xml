@@ -12,77 +12,22 @@
   <component name="ChangeListManager">
     <list default="true" id="1218c5c2-4a62-4f13-9997-c70724bbff59" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HackathonMIG/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HackathonMIG/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/openPBR_shader1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/openPBR_shader1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Core.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Core.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/1- Player Camera Character Setup.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/1- Player Camera Character Setup.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/1- Player Camera Character Setup/Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/1- Player Camera Character Setup/Scene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/1- Player Camera Character Setup/Scene/WalkthroughScene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/1- Player Camera Character Setup/Scene/WalkthroughScene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/10- Multiple movement states setup.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/10- Multiple movement states setup.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/10- Multiple movement states setup/Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/10- Multiple movement states setup/Scene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/10- Multiple movement states setup/Scene/WalkthroughScene10.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/10- Multiple movement states setup/Scene/WalkthroughScene10.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/11- Charging state.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/11- Charging state.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/11- Charging state/Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/11- Charging state/Scene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/11- Charging state/Scene/WalkthroughScene11.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/11- Charging state/Scene/WalkthroughScene11.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/12- NoClip state.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/12- NoClip state.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/12- NoClip state/Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/12- NoClip state/Scene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/12- NoClip state/Scene/WalkthroughScene12.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/12- NoClip state/Scene/WalkthroughScene12.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/13- Swimming state.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/13- Swimming state.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/13- Swimming state/Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/13- Swimming state/Scene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/13- Swimming state/Scene/WalkthroughScene13.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/13- Swimming state/Scene/WalkthroughScene13.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/14- Climbing Ladders.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/14- Climbing Ladders.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/14- Climbing Ladders/Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/14- Climbing Ladders/Scene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/14- Climbing Ladders/Scene/WalkthroughScene14.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/14- Climbing Ladders/Scene/WalkthroughScene14.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter/Animator.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter/Animator.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter/Animator/ThirdPersonAnimatorController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter/Animator/ThirdPersonAnimatorController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter/Materials.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter/Materials/Ethan.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter/Materials/Ethan.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter/Models.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter/Models.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter/Models/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter/Models/Materials.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter/Models/Materials/EthanWhite.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter/Models/Materials/EthanWhite.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter/Prefabs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter/Prefabs/Ethan.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/EthanCharacter/Prefabs/Ethan.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/Scene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/Scene/WalkthroughScene15.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/15- Root motion example/Scene/WalkthroughScene15.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/16- FramePerfect Rotation.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/16- FramePerfect Rotation.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/16- FramePerfect Rotation/Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/16- FramePerfect Rotation/Scene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/16- FramePerfect Rotation/Scene/WalkthroughScene16.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/16- FramePerfect Rotation/Scene/WalkthroughScene16.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/2- Basic Movement and Gravity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/2- Basic Movement and Gravity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/2- Basic Movement and Gravity/Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/2- Basic Movement and Gravity/Scene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/2- Basic Movement and Gravity/Scene/WalkthroughScene2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/2- Basic Movement and Gravity/Scene/WalkthroughScene2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/3- Jumping.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/3- Jumping.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/3- Jumping/Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/3- Jumping/Scene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/3- Jumping/Scene/WalkthroughScene3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/3- Jumping/Scene/WalkthroughScene3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/4- Landing and leaving ground.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/4- Landing and leaving ground.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/4- Landing and leaving ground/Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/4- Landing and leaving ground/Scene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/4- Landing and leaving ground/Scene/WalkthroughScene4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/4- Landing and leaving ground/Scene/WalkthroughScene4.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/5- Adding velocities and impulses.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/5- Adding velocities and impulses.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/5- Adding velocities and impulses/Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/5- Adding velocities and impulses/Scene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/5- Adding velocities and impulses/Scene/WalkthroughScene5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/5- Adding velocities and impulses/Scene/WalkthroughScene5.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/6- Crouching.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/6- Crouching.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/6- Crouching/Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/6- Crouching/Scene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/6- Crouching/Scene/WalkthroughScene6.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/6- Crouching/Scene/WalkthroughScene6.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/7- Orienting towards arbitrary up direction.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/7- Orienting towards arbitrary up direction.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/7- Orienting towards arbitrary up direction/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/7- Orienting towards arbitrary up direction/Materials.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/7- Orienting towards arbitrary up direction/Materials/No Name.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/7- Orienting towards arbitrary up direction/Materials/No Name.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/7- Orienting towards arbitrary up direction/Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/7- Orienting towards arbitrary up direction/Scene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/7- Orienting towards arbitrary up direction/Scene/WalkthroughScene7.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/7- Orienting towards arbitrary up direction/Scene/WalkthroughScene7.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/8- Creating a moving platform.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/8- Creating a moving platform.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/8- Creating a moving platform/MovingPlatformTimeline.playable" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/8- Creating a moving platform/MovingPlatformTimeline.playable" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/8- Creating a moving platform/Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/8- Creating a moving platform/Scene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/8- Creating a moving platform/Scene/WalkthroughScene8.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/8- Creating a moving platform/Scene/WalkthroughScene8.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/9- Custom collision filtering.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/9- Custom collision filtering.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/9- Custom collision filtering/Scene.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/9- Custom collision filtering/Scene.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/9- Custom collision filtering/Scene/WalkthroughScene9.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/KinematicCharacterController/Walkthrough/9- Custom collision filtering/Scene/WalkthroughScene9.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerCharacter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerCharacter.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerController.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerController.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/S_Playground.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/S_Playground.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Anims.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Red.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/Red.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/UI.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameLogic/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameLogic/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractionController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inputs/InputManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inputs/InputManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteract.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteract.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteractController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPickUp.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerPickUp.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Interaction/BaseInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Interaction/BaseInteractable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Interaction/IInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Interaction/IInteractable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Interaction/_derivatives/SampleInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Interaction/_derivatives/SampleInteractable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/PickUp/GrabbableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/PickUp/GrabbableObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/PickUp/IGrabbable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/PickUp/IGrabbable.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,30 +129,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "Feature__Player-Controller",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.5.2f1\Editor\Unity.exe" />
@@ -258,7 +203,6 @@
       <workItem from="1783028211134" duration="3368000" />
       <workItem from="1783060269695" duration="224000" />
       <workItem from="1783060556510" duration="2410000" />
-      <workItem from="1783116101755" duration="1437000" />
     </task>
     <servers />
   </component>
