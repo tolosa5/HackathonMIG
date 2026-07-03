@@ -1,8 +1,11 @@
 using UnityEngine;
 
-public abstract class BaseInteractable : MonoBehaviour, IInteractable
+namespace Game.Interaction
 {
-    public bool isInteractable = true;
-    public abstract void Interact(Transform interactor);
-    public Transform GetTransform() { return transform; }
+    public abstract class BaseInteractable : MonoBehaviour, IInteractable
+    {
+        public bool isInteractable = true;
+        public abstract void Interact(Transform interactor);
+        public Transform GetTransform() { return transform; }
+    }
 }

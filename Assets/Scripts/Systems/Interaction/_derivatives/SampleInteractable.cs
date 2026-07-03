@@ -1,9 +1,12 @@
 using UnityEngine;
 
-public class SampleInteractable : BaseInteractable
+namespace Game.Interaction
 {
-    public override void Interact(Transform interactor)
+    public class SampleInteractable : BaseInteractable
     {
-        Debug.Log("Interacted");
+        public override void Interact(Transform interactor)
+        {
+            Debug.Log("Interacted");
+        }
     }
 }
