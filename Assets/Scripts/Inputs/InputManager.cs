@@ -5,12 +5,12 @@ using UnityEngine.InputSystem;
 public class InputManager : MonoBehaviour
 {
     public static InputManager instance;
-    
-    [SerializeField] private InputActionReference interactAction;
-    public Action onInteractEvent;
+    public InputSystem_Actions inputSystemActions;
 
     private void Awake()
     {
+        inputSystemActions = new InputSystem_Actions();
+        
         if (instance != null)
         {
             Destroy(gameObject);
@@ -19,22 +19,9 @@ public class InputManager : MonoBehaviour
 
         instance = this;
     }
-
-    private void OnEnable()
+    
+    private void OnDestroy()
     {
-        interactAction.action.Enable();
-    }
-
-    private void Update()
-    {
-        if (interactAction.action.WasPressedThisFrame())
-        {
-            onInteractEvent?.Invoke();
-        }
-    }
-
-    private void OnDisable()
-    {
-        interactAction.action.Disable();
+        inputSystemActions.Dispose();
     }
 }

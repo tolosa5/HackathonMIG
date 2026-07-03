@@ -7,6 +7,14 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField] private LayerMask interactableMask;
     [SerializeField] private float interactionSize;
 
+    private void Update()
+    {
+        if (GetInteractableObject() != null)
+            GameManager.instance.ShowTooltip();
+        else
+            GameManager.instance.HideTooltip();
+    }
+
     public IInteractable GetInteractableObject()
     {
         Collider[] interactableColls = Physics.OverlapSphere(
