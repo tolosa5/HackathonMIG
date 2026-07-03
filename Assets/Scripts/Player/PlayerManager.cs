@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     PlayerInteract playerInteract;
+    PlayerPickUp playerPickUp;
     
     public Action onShowTooltip;
     public Action onHideTooltip;
@@ -16,6 +17,8 @@ public class PlayerManager : MonoBehaviour
     private void EventsSubscription()
     {
         InputManager.instance.onInteractEvent += LookForInteraction;
+        InputManager.instance.onPickUpEvent += playerPickUp.PickUp;
+        InputManager.instance.onDropEvent += playerPickUp.Drop;
     }
 
     private void Start()
