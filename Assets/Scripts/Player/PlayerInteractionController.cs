@@ -5,10 +5,10 @@ using UnityEngine;
 
 namespace Game.Player
 {
-    public class PlayerInteractController : MonoBehaviour
+    public class PlayerInteractionController : MonoBehaviour
     {
-        PlayerInteract playerInteract;
-        PlayerPickUp playerPickUp;
+        [SerializeField] private PlayerInteract playerInteract;
+        [SerializeField] private PlayerPickUp playerPickUp;
 
         private void EventsSubscription()
         {
