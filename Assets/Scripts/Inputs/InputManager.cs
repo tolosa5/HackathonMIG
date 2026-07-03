@@ -5,16 +5,12 @@ using UnityEngine.InputSystem;
 public class InputManager : MonoBehaviour
 {
     public static InputManager instance;
-    
-    [SerializeField] private InputActionReference interactAction;
-    public Action onInteractEvent;
-
-    [SerializeField] private InputActionReference pickUpAction;
-    public Action onPickUpEvent;
-    public Action onDropEvent;
+    public InputSystem_Actions inputSystemActions;
 
     private void Awake()
     {
+        inputSystemActions = new InputSystem_Actions();
+        
         if (instance != null)
         {
             Destroy(gameObject);
@@ -23,27 +19,9 @@ public class InputManager : MonoBehaviour
 
         instance = this;
     }
-
-    private void OnEnable()
+    
+    private void OnDestroy()
     {
-        interactAction.action.Enable();
-        pickUpAction.action.Enable();
-    }
-
-    private void Update()
-    {
-        if (interactAction.action.WasPressedThisFrame())
-            onInteractEvent?.Invoke();
-
-        if (pickUpAction.action.WasPressedThisFrame())
-            onPickUpEvent?.Invoke();
-        if (pickUpAction.action.WasReleasedThisFrame())
-            onDropEvent?.Invoke();
-    }
-
-    private void OnDisable()
-    {
-        interactAction.action.Disable();
-        pickUpAction.action.Disable();
+        inputSystemActions.Dispose();
     }
 }

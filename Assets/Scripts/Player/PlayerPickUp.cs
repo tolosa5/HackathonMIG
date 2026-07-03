@@ -12,6 +12,7 @@ public class PlayerPickUp : MonoBehaviour
     
     public void PickUp()
     {
+        Debug.Log("Picking up");
         hits = Physics.RaycastNonAlloc(transform.position, transform.forward, results, maxRayDistance, interactableLayer);
         if (hits <= 0)
             return;
@@ -25,6 +26,7 @@ public class PlayerPickUp : MonoBehaviour
 
     public void Drop()
     {
+        Debug.Log("Dropping");
         if (hits <= 0)
             return;
 
@@ -33,10 +35,5 @@ public class PlayerPickUp : MonoBehaviour
             if (results[i].collider.gameObject.TryGetComponent(out GrabbableObject grabbable))
                 grabbable.Drop();
         }
-    }
-    
-    private void Update()
-    {
-        
     }
 }
