@@ -1,27 +1,30 @@
 using System;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class InputManager : MonoBehaviour
+namespace Game.Inputs
 {
-    public static InputManager instance;
-    public InputSystem_Actions inputSystemActions;
-
-    private void Awake()
+    public class InputManager : MonoBehaviour
     {
-        inputSystemActions = new InputSystem_Actions();
-        
-        if (instance != null)
+        public static InputManager instance;
+        public InputSystem_Actions inputSystemActions;
+
+        private void Awake()
         {
-            Destroy(gameObject);
-            return;
+            if (instance != null)
+            {
+                Destroy(gameObject);
+                return;
+            }
+
+            instance = this;
+        
+            inputSystemActions = new InputSystem_Actions();
+            inputSystemActions.Enable();
         }
 
-        instance = this;
-    }
-    
-    private void OnDestroy()
-    {
-        inputSystemActions.Dispose();
+        private void OnDestroy()
+        {
+            inputSystemActions.Dispose();
+        }
     }
 }

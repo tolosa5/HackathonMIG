@@ -1,6 +1,9 @@
 using UnityEngine;
 
-public interface IInteractable
+namespace Game.Interaction
 {
-    public void Interact(Transform interactor);
+    public interface IInteractable
+    {
+        public void Interact(Transform interactor);
+    }
 }

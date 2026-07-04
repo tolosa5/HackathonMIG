@@ -1,6 +1,10 @@
+using Game.Interaction;
 using UnityEngine;
 
-public interface IGrabbable : IInteractable
+namespace Game.Interaction
 {
-    public void Grab(Transform grabPoint);
+    public interface IGrabbable : IInteractable
+    {
+        public void Grab(Transform grabPoint);
+    }
 }

@@ -1,8 +1,9 @@
+using Game.Inputs;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace Game.FirstPerson
 {
+    [SelectionBase]
     [DisallowMultipleComponent]
     public class FirstPersonPlayerController : MonoBehaviour
     {
@@ -10,16 +11,12 @@ namespace Game.FirstPerson
         [SerializeField] private FirstPersonCharacter character;
         
         [Header("Camera")]
-        [SerializeField] private Transform cameraRoot;
-        [SerializeField] private Transform cameraTarget;
-        [SerializeField, Range(0f, 1f)] private Vector2 sensitivityMultiplier = new(0.5f, 0.5f);
+        [SerializeField] private Transform playerCamera;
+        [SerializeField] private Vector2 sensitivityMultiplier = new(0.5f, 0.5f);
+        [SerializeField] private Vector2 pitchMaxAngles = new(-80f, 80f);
 
         private Vector3 viewEuler;
-        
-        // TODO: Eliminar esto. Temporal para pruebas.
-        public InputActionReference LookInput;
-        public InputActionReference MoveInput;
-        
+
         private void Start()
         {
 #if DEBUG
@@ -30,25 +27,54 @@ namespace Game.FirstPerson
                 return;
             }
 #endif
-            
+
             character.Initialize();
+
+            var cameraTargetTransform = character.CameraTargetTransform;
             
             // Snap camera to the first person camera position.
-            cameraRoot.SetPositionAndRotation(cameraTarget.position, cameraTarget.rotation);
+            playerCamera.SetPositionAndRotation(cameraTargetTransform.position, cameraTargetTransform.rotation);
         }
 
         private void Update()
         {
-            Vector2 lookInput = LookInput.action.ReadValue<Vector2>();
+#if DEBUG
+            if (character == null)
+            {
+                return;
+            }
+#endif
             
-            viewEuler += new Vector3(-lookInput.y, lookInput.x);
+            var playerActions = InputManager.instance.inputSystemActions.Player;
+            
+            Vector2 lookInput = playerActions.Look.ReadValue<Vector2>();
+            lookInput *= sensitivityMultiplier;
 
-            cameraRoot.eulerAngles = viewEuler;
+            viewEuler += new Vector3(-lookInput.y, lookInput.x);
+            viewEuler.x = Mathf.Clamp(viewEuler.x, pitchMaxAngles.x, pitchMaxAngles.y);
+            
+            // playerCamera.eulerAngles = viewEuler;
+            playerCamera.rotation = Quaternion.Euler(viewEuler);
+            
+            var characterInput = new FirstPersonCharacterInput
+            {
+                Yaw = viewEuler.y,
+                Rotation = playerCamera.rotation,
+                Move = playerActions.Move.ReadValue<Vector2>(),
+            };
+            character.UpdateInput(ref characterInput);
         }
 
         private void LateUpdate()
         {
-            cameraRoot.position = cameraTarget.position;
+#if DEBUG
+            if (character == null || character.CameraTargetTransform == null)
+            {
+                return;
+            }
+#endif
+            
+            playerCamera.position = character.CameraTargetTransform.position;
         }
     }
 }

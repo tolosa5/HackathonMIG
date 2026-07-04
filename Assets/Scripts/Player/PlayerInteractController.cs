@@ -1,31 +1,34 @@
 using System;
+using Game.Inputs;
+using Game.Interaction;
 using UnityEngine;
 
-public class PlayerInteractController : MonoBehaviour
+namespace Game.Player
 {
-    PlayerInteract playerInteract;
-    PlayerPickUp playerPickUp;
-
-    private void OnEnable()
+    public class PlayerInteractController : MonoBehaviour
     {
-        EventsSubscription();
-    }
+        PlayerInteract playerInteract;
+        PlayerPickUp playerPickUp;
 
-    private void EventsSubscription()
-    {
-        InputManager.instance.inputSystemActions.Player.Interact.performed += ctx => LookForInteraction();
-        InputManager.instance.inputSystemActions.Player.Grab.performed += ctx => playerPickUp.PickUp();
-        InputManager.instance.inputSystemActions.Player.Interact.canceled += ctx => playerPickUp.Drop();
-    }
+        private void EventsSubscription()
+        {
+            InputManager.instance.inputSystemActions.Player.Interact.performed += ctx => LookForInteraction();
+            InputManager.instance.inputSystemActions.Player.Grab.performed += ctx => playerPickUp.PickUp();
+            InputManager.instance.inputSystemActions.Player.Grab.canceled += ctx => playerPickUp.Drop();
+        }
 
-    private void Start()
-    {
-        playerInteract = GetComponent<PlayerInteract>();
-    }
+        private void Start()
+        {
+            EventsSubscription();
+            playerInteract = GetComponent<PlayerInteract>();
+            playerPickUp = GetComponent<PlayerPickUp>();
+        }
 
-    private void LookForInteraction()
-    {
-        IInteractable interactable = playerInteract.GetInteractableObject();
-        interactable?.Interact(transform);
+        private void LookForInteraction()
+        {
+            Debug.Log("Looking for interaction");
+            IInteractable interactable = playerInteract.GetInteractableObject();
+            interactable?.Interact(transform);
+        }
     }
 }

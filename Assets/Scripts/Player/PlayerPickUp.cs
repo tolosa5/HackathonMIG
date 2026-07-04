@@ -1,38 +1,34 @@
 using System;
+using Game.Interaction;
 using UnityEngine;
 
-public class PlayerPickUp : MonoBehaviour
+namespace Game.Player
 {
-    [SerializeField] private float maxRayDistance = 20f;
-    [SerializeField] private LayerMask interactableLayer;
-    [SerializeField] private Transform grabPoint;
-    
-    private RaycastHit[] results = new RaycastHit[5];
-    private int hits = 0;
-    
-    public void PickUp()
+    public class PlayerPickUp : MonoBehaviour
     {
-        Debug.Log("Picking up");
-        hits = Physics.RaycastNonAlloc(transform.position, transform.forward, results, maxRayDistance, interactableLayer);
-        if (hits <= 0)
-            return;
-
-        for (int i = 0; i < hits; i++)
+        [SerializeField] private Transform grabPoint;
+        [SerializeField] private LayerMask interactableLayer;
+        [SerializeField] private float maxRayDistance = 20f;
+    
+        GameObject pickedGameObject;
+    
+        public void PickUp()
         {
-            if (results[i].collider.gameObject.TryGetComponent(out GrabbableObject grabbable))
+            if (!Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, maxRayDistance, interactableLayer))
+                return;
+        
+            pickedGameObject = hit.collider.gameObject;
+        
+            if (pickedGameObject.TryGetComponent(out GrabbableObject grabbable))
                 grabbable.Grab(grabPoint);
         }
-    }
 
-    public void Drop()
-    {
-        Debug.Log("Dropping");
-        if (hits <= 0)
-            return;
-
-        for (int i = 0; i < hits; i++)
+        public void Drop()
         {
-            if (results[i].collider.gameObject.TryGetComponent(out GrabbableObject grabbable))
+            if (!pickedGameObject)
+                return;
+
+            if (pickedGameObject.TryGetComponent(out GrabbableObject grabbable))
                 grabbable.Drop();
         }
     }

@@ -1,35 +1,44 @@
 using System;
 using UnityEngine;
 
-public class GrabbableObject : MonoBehaviour
+namespace Game.Interaction
 {
-    private Rigidbody rb;
-    private Transform grabPoint;
-
-    private void Awake()
+    public class GrabbableObject : MonoBehaviour
     {
-        rb = GetComponent<Rigidbody>();
-    }
+        private Rigidbody rb;
+        private Transform grabPoint;
 
-    private void FixedUpdate()
-    {
-        if (!grabPoint)
-            return;
+        private void Awake()
+        {
+            rb = GetComponent<Rigidbody>();
+        }
 
-        float lerpSpeed = 10f;
-        Vector3 targetPosition = Vector3.Lerp(transform.position, grabPoint.position, Time.deltaTime * lerpSpeed);
-        rb.MovePosition(targetPosition);
-    }
+        private void FixedUpdate()
+        {
+            if (!grabPoint)
+                return;
 
-    public void Grab(Transform grabPoint)
-    {
-        this.grabPoint.position = grabPoint.position;
-        rb.useGravity = false;
-    }
+            float lerpSpeed = 10f;
+            Vector3 targetPosition = Vector3.Lerp(transform.position, 
+                grabPoint.position, Time.deltaTime * lerpSpeed);
+            rb.MovePosition(targetPosition);
+        }
 
-    public void Drop()
-    {
-        grabPoint = null;
-        rb.useGravity = true;
+        public void Grab(Transform grabPoint)
+        {
+            this.grabPoint = grabPoint;
+            rb.isKinematic = true;
+            rb.useGravity = false;
+            Debug.Log("Grabbed");
+        }
+
+        public void Drop()
+        {
+            grabPoint = null;
+            rb.isKinematic = false;
+            rb.useGravity = true;
+            Debug.Log("Dropped");
+        }
     }
 }
+
