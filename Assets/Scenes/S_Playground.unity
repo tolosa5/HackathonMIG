@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 767799010}
   - component: {fileID: 767799009}
   - component: {fileID: 767799008}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +381,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6233233490983467054, guid: 3bda3fbeb4858504a823466d67b0e5dd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.41
       objectReference: {fileID: 0}
     - target: {fileID: 6233233490983467054, guid: 3bda3fbeb4858504a823466d67b0e5dd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -511,7 +511,7 @@ GameObject:
   - component: {fileID: 1571258230}
   - component: {fileID: 1571258229}
   - component: {fileID: 1571258228}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
