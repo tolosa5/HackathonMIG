@@ -1,4 +1,5 @@
 using System;
+using Game.EventSystem.Channels;
 using UnityEngine;
 
 namespace Game.Interaction
@@ -8,11 +9,11 @@ namespace Game.Interaction
         [SerializeField] private InspectableData data;
         public InspectableData Data => data;
         
-        public Action<InspectableData> onInspectItemUIEvent;
+        [SerializeField] private VoidEventChannel onInspectItemUIEvent;
         
         public override void Interact(Transform interactor)
         {
-            onInspectItemUIEvent?.Invoke(data);
+            //onInspectItemUIEvent?.Notify(data);
         }
 
         public void SetData(InspectableData data) { this.data = data; }

@@ -1,7 +1,9 @@
 using System;
+using Game.EventSystem.Channels;
 using Game.Inputs;
 using TMPro;
 using UnityEngine;
+using Void = Game.EventSystem.Channels.Void;
 
 namespace Game.Logic
 {
@@ -13,9 +15,14 @@ namespace Game.Logic
         [TextArea]
         [SerializeField] private string text;
         
-        public Action onGameStartEvent;
+        [SerializeField] private VoidEventChannel onGameStartChannel;
 
-        public void ShowStartText()
+        private void Start()
+        {
+            ShowStartText();
+        }
+
+        private void ShowStartText()
         {
             InputManager.instance.inputSystemActions.Player.Disable();
             InputManager.instance.inputSystemActions.UI.Enable();
@@ -26,7 +33,7 @@ namespace Game.Logic
         public void HideStartText()
         {
             gameStartWrapper.SetActive(false);
-            onGameStartEvent?.Invoke();
+            onGameStartChannel.Notify();
             InputManager.instance.inputSystemActions.UI.Disable();
             InputManager.instance.inputSystemActions.Player.Enable();
         }

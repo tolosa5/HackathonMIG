@@ -1,6 +1,7 @@
-using System;
+using Game.EventSystem.Channels;
 using Game.Interaction;
 using UnityEngine;
+using Void = Game.EventSystem.Channels.Void;
 
 namespace Game.Mail
 {
@@ -13,9 +14,15 @@ namespace Game.Mail
         
         [SerializeField] private GameObject mailPrefab;
 
-        public Action onEndGameEvent;
+        [SerializeField] private VoidEventChannel onGameStartEvent;
+        [SerializeField] private VoidEventChannel onEndGameEvent;
 
-        public void StartSpawn()
+        private void Awake()
+        {
+            //onGameStartEvent.Register(StartSpawn(Void void));
+        }
+
+        private void StartSpawn()
         {
             Spawn();
             isTimerActive = true;
@@ -32,7 +39,7 @@ namespace Game.Mail
                 isTimerActive = false;
                 currentTime = 0f;
                 Debug.Log("All letters spawned");
-                onEndGameEvent?.Invoke();
+                onEndGameEvent.Notify();
                 return;
             }
             if (currentTime >= spawnTimeStamps[currentLetter] && isTimerActive)
