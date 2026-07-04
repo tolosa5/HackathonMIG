@@ -1,3 +1,4 @@
+using System;
 using Game.Interaction;
 using UnityEngine;
 
@@ -12,7 +13,9 @@ namespace Game.Mail
         
         [SerializeField] private GameObject mailPrefab;
 
-        private void Start()
+        public Action onEndGameEvent;
+
+        public void StartSpawn()
         {
             Spawn();
             isTimerActive = true;
@@ -20,11 +23,16 @@ namespace Game.Mail
 
         private void Update()
         {
+            if (!isTimerActive)
+                return;
+            
             float currentTime = Time.deltaTime;
             if (currentLetter >= spawnTimeStamps.Length)
             {
                 isTimerActive = false;
+                currentTime = 0f;
                 Debug.Log("All letters spawned");
+                onEndGameEvent?.Invoke();
                 return;
             }
             if (currentTime >= spawnTimeStamps[currentLetter] && isTimerActive)

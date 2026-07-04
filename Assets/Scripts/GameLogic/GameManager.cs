@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     
     private PlayerInteractionController playerInteractionController;
-    private CanvasManager canvasManager;
+    private InteractionTooltip interactionTooltip;
 
     private void Awake()
     {
@@ -25,16 +25,16 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         playerInteractionController = FindObjectOfType<PlayerInteractionController>();
-        canvasManager = FindObjectOfType<CanvasManager>();
+        interactionTooltip = FindObjectOfType<InteractionTooltip>();
     }
 
-    public void ShowTooltip()
+    public void ShowTooltip(string text)
     {
-        canvasManager.ShowTooltip();
+        interactionTooltip.ShowTooltip(text);
     }
 
     public void HideTooltip()
     {
-        canvasManager.HideTooltip();
+        interactionTooltip.HideTooltip();
     }
 }
