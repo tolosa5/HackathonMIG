@@ -6,27 +6,39 @@ namespace Game.PauseMenu
 {
     public class PauseMenu : MonoBehaviour
     {
-        public UnityEvent GamePaused;
-        public UnityEvent GameResumed;
+        public GameObject PausePanel;
         private bool _isPaused;
 
-        // Update is called once per frame
         void Update()
         {
             if (Keyboard.current.escapeKey.wasPressedThisFrame)
             {
                 Debug.Log("escape");
-                _isPaused = !_isPaused;
 
+                _isPaused=!_isPaused;
                 if (_isPaused)
+                {   
+                    Pause();
+                } else
                 {
-                    Time.timeScale=0;
-                } 
-                else
-                {
-                    Time.timeScale=1;    
+                    Continue();
                 }
             }
+
         }
-    }
+
+        public void Pause()
+        {
+            Debug.Log("pausa");
+            PausePanel.SetActive(true);
+            Time.timeScale=0;
+        }
+
+        public void Continue()
+        {
+            Debug.Log("continue");
+            PausePanel.SetActive(false);
+            Time.timeScale=1;
+        }
+    }   
 }
