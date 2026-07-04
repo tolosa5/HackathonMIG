@@ -18,11 +18,9 @@ namespace Game.FirstPerson
         [SerializeField] private KinematicCharacterMotor motor;
         [SerializeField] private Transform cameraTargetTransform;
 
-        [Header("Locomotion Config")] [SerializeField]
-        private float walkSpeed = 6.5f;
-
-        [Header("First Person View")] [SerializeField]
-        private Vector2 upDownLookAngleClamp = new(-80f, 80f);
+        [Header("Locomotion Config")]
+        [SerializeField] private float walkSpeed = 6.5f;
+        [SerializeField] private float gravity = -90f;
 
         // private Quaternion requestedRotation;
         private float requestedYaw;
@@ -74,13 +72,22 @@ namespace Game.FirstPerson
 
         public void UpdateVelocity(ref Vector3 currentVelocity, float deltaTime)
         {
-            Vector3 currentMovementDirection = movementDirection;
+            if (motor.GroundingStatus.IsStableOnGround)
+            {
+                // Ground movement.
+                Vector3 currentMovementDirection = movementDirection;
 
-            Vector3 groundedMovement = motor.GetDirectionTangentToSurface(
-                direction: currentMovementDirection,
-                surfaceNormal: motor.GroundingStatus.GroundNormal) * currentMovementDirection.magnitude;
+                Vector3 groundedMovement = motor.GetDirectionTangentToSurface(
+                    direction: currentMovementDirection,
+                    surfaceNormal: motor.GroundingStatus.GroundNormal) * currentMovementDirection.magnitude;
 
-            currentVelocity = groundedMovement * walkSpeed;
+                currentVelocity = groundedMovement * walkSpeed;   
+            }
+            else
+            {
+                // Basic gravity acceleration.
+                currentVelocity += motor.CharacterUp * (gravity * deltaTime);
+            }
         }
 
         public void BeforeCharacterUpdate(float deltaTime)

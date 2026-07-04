@@ -234,9 +234,9 @@ MonoBehaviour:
   MaxStableSlopeAngle: 60
   StableGroundLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 128
   DiscreteCollisionEvents: 0
-  StepHandling: 1
+  StepHandling: 0
   MaxStepHeight: 0.5
   AllowSteppingWithoutStableGrounding: 0
   MinRequiredStepDepth: 0.1
@@ -244,7 +244,7 @@ MonoBehaviour:
   MaxStableDistanceFromLedge: 0.5
   MaxVelocityForLedgeSnap: 0
   MaxStableDenivelationAngle: 180
-  InteractiveRigidbodyHandling: 1
+  InteractiveRigidbodyHandling: 0
   RigidbodyInteractionType: 0
   SimulatedCharacterMass: 1
   PreserveAttachedRigidbodyMomentum: 1
@@ -270,7 +270,7 @@ MonoBehaviour:
   motor: {fileID: 5614413193499755734}
   cameraTargetTransform: {fileID: 6443615354672758032}
   walkSpeed: 6.5
-  upDownLookAngleClamp: {x: -80, y: 80}
+  gravity: -90
 --- !u!1 &8346120518374291118
 GameObject:
   m_ObjectHideFlags: 0
