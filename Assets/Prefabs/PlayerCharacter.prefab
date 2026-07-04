@@ -167,6 +167,8 @@ GameObject:
   - component: {fileID: 901796721491545623}
   - component: {fileID: 5614413193499755734}
   - component: {fileID: 5185499679015693512}
+  - component: {fileID: 3335633708364770020}
+  - component: {fileID: 4295895780352276268}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Untagged
@@ -271,6 +273,40 @@ MonoBehaviour:
   cameraTargetTransform: {fileID: 6443615354672758032}
   walkSpeed: 3.5
   gravity: -90
+--- !u!114 &3335633708364770020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5770113752286282242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91873da383153364f9ae152e9f758ceb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Player.PlayerInteract
+  interactTransform: {fileID: 0}
+  interactableMask:
+    serializedVersion: 2
+    m_Bits: 64
+  interactionSize: 0.5
+--- !u!114 &4295895780352276268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5770113752286282242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b11effc7b0380fa4b869a81c9310fe4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Player.PlayerPickUp
+  grabPoint: {fileID: 0}
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  maxRayDistance: 3
 --- !u!1 &8346120518374291118
 GameObject:
   m_ObjectHideFlags: 0

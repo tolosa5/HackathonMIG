@@ -3,8 +3,11 @@ using UnityEngine;
 
 namespace Game.Interaction
 {
-    public class GrabbableObject : MonoBehaviour
+    public class GrabbableObject : MonoBehaviour, IGrabbable
     {
+        [SerializeField] private string tooltip;
+        [SerializeField] private bool isInteractable = true;
+        
         private Rigidbody rb;
         private Transform grabPoint;
 
@@ -27,7 +30,6 @@ namespace Game.Interaction
         public void Grab(Transform grabPoint)
         {
             this.grabPoint = grabPoint;
-            rb.isKinematic = true;
             rb.useGravity = false;
             Debug.Log("Grabbed");
         }
@@ -35,10 +37,17 @@ namespace Game.Interaction
         public void Drop()
         {
             grabPoint = null;
-            rb.isKinematic = false;
             rb.useGravity = true;
             Debug.Log("Dropped");
         }
+
+        public void Interact(Transform interactor)
+        {
+            
+        }
+
+        public string GetTooltipText() {  return tooltip; }
+        public bool GetIsInteractable() {  return isInteractable; }
     }
 }
 

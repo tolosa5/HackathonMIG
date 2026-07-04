@@ -1,4 +1,3 @@
-using Game.Interaction;
 using UnityEngine;
 
 namespace Game.Interaction

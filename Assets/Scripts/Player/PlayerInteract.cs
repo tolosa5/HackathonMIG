@@ -12,13 +12,15 @@ namespace Game.Player
 
         private void Update()
         {
-            if (GetInteractableObject() != null)
-                GameManager.instance.ShowTooltip();
+            IInteractable interactable = GetInteractableObject();
+            
+            if (interactable != null && interactable.GetIsInteractable())
+                GameManager.instance.ShowTooltip(interactable.GetTooltipText());
             else
                 GameManager.instance.HideTooltip();
         }
 
-        public IInteractable GetInteractableObject()
+        private IInteractable GetInteractableObject()
         {
             Collider[] colls = Physics.OverlapSphere(interactTransform.position, 
                 interactionSize, interactableMask);
@@ -28,6 +30,16 @@ namespace Game.Player
         
             return colls[0].gameObject.TryGetComponent(
                 out IInteractable interactable) ? interactable : null;
+        }
+        
+        public void LookForInteraction()
+        {
+            Debug.Log("Looking for interaction");
+            IInteractable interactable = GetInteractableObject();
+            if (!interactable.GetIsInteractable())
+                return;
+            
+            interactable?.Interact(transform);
         }
 
         private void OnDrawGizmos()
