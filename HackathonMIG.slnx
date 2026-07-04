@@ -1,0 +1,7 @@
+﻿<Solution>
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="KinematicCharacterController.csproj" />
+  <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="Game.FirstPerson.csproj" />
+  <Project Path="KinematicCharacterController.Editor.csproj" />
+</Solution>
