@@ -1,12 +1,14 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Game.EventSystem.Channels;
 using UnityEngine.Events;
 
-namespace Game.PauseMenu
+namespace Game
 {
     public class PauseMenu : MonoBehaviour
     {
         public GameObject PausePanel;
+        [SerializeField] private Game.EventSystem.Channels.BoolEventChannel pauseEvent;
         private bool _isPaused;
 
         void Update()
@@ -32,6 +34,7 @@ namespace Game.PauseMenu
             Debug.Log("pausa");
             PausePanel.SetActive(true);
             Time.timeScale=0;
+            pauseEvent.Notify(true);
         }
 
         public void Continue()
@@ -39,6 +42,13 @@ namespace Game.PauseMenu
             Debug.Log("continue");
             PausePanel.SetActive(false);
             Time.timeScale=1;
+            pauseEvent.Notify(false);
+        }
+
+        public void QuitGame()
+        {
+            Debug.Log("se salio");
+            Application.Quit();
         }
     }   
 }
