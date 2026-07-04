@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-namespace HackatonMIG
+namespace Game.MainMenu
 {
     public class MainMenuCanva : MonoBehaviour
     {
